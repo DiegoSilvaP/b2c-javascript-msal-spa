@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAD B@C login page</title>
+</head>
+<body>
+<label name="tokenTextarea" id="tokenTextarea"></label>
+</body>
+<script>
+    var txt = document.getElementById('tokenTextarea');
+    // txt.value = window.location.href.replace(window.location.protocol+"//"+window.location.host+window.location.pathname+"#",'')
+
+    //crear funcion gettoken()
+    function getToken(){
+        txt.innerText="logged in";
+        // return window.location.href.replace(window.location.protocol+"//"+window.location.host+window.location.pathname+"#",'');
+        return window.location.href.replace("https://msaljavascript.z20.web.core.windows.net/auth.html?code=",'');
+    }
+</script>
+</html>
